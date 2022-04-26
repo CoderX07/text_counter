@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Word Count</title>
+  <link href="text-counter.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <center>
+    <br><br>
+    <h1>Text Counter</h1>
+      <br><br><br><br>
+        <form>
+            <textarea type = "text" id = "user-search" autofocus autocomplete = "off" placeholder="Type Or Paste Text (cmd/ctrl + v)"></textarea>
+            <button type="button" id="search-btn" onclick="count(document.getElementById('user-search').value);">Calculate</button>
+        </form>
+        <p id="num-of-words"></p>
+    </center>
+  <script src="text-counter.js"></script>
+</body>
+</html>

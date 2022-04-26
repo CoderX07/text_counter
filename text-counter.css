@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+:root {
+    --primary-color: #fdfdfd;
+    --primary-color-transparent: #fdfdfde7;
+    --secondary-color: #f0f0f0;
+    --secondary-color-hover: #ddd;
+    --primary-text-color: #1a1110;
+    --secondary-text-color: #6e7379;
+    --border-color: rgba(74 77 81 / 0.1);
+    --accent-color: #1e90ff;
+    --accent-color-hover: #106dca;
+    --accent-color-focus: #50a6fc;
+    --font-family: 'Lato', sans-serif;
+  
+    --red-color: #B71C1C;
+    --pink-color: #880E4F;
+    --purple-color: #4A148C;
+    --blue-color: #1A237E;
+    --green-color: #1B5E20;
+    --yellow-color: #FFFF00;
+    --orange-color: #E65100;
+    --brown-color: #3E2723;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --transition-speed: 600ms;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+input[type="text"], textarea, button {
+	background: var(--secondary-color);
+	margin-top: 20px;
+	padding-left: 8px;
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	font-family: var(--font-family);
+	font-size: 18px;
+	transition: 0.3s;
+	color: var(--primary-text-color);
+}
+
+input[type="text"] {
+	width: 300px;
+	height: 400px;
+}
+
+textarea {
+	padding-top: 10px;
+	max-width: 800px;
+	width: 100%;
+	min-height: 50px;
+	height: 200px;
+	resize: vertical;
+	transition: background 0.3s, box-shadow 0.3s;
+}
+
+input:hover, textarea:hover, button:hover {
+	background: var(--secondary-color-hover);
+}
+
+input:focus, textarea:focus, button:focus {
+	background: var(--secondary-color);
+	box-shadow: 0 0 0 2px var(--accent-color-focus);
+}
+
+#search-btn {
+    width: 800px;
+    height: 40px;
+    display: block;
+}
+
+h1, p {
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+}
+
+h1 {
+    font: bold;
+}
