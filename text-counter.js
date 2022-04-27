@@ -8,7 +8,6 @@ String.prototype.format = function () {
 var nom = document.getElementById("num-of-words");
 
 function count(text_input){
-  
   alert('This is what you inputted: {}'.format(text_input));
   let all_chars = text_input.split(" ");
   nom.innerHTML = "The Number Of Words In Your Text: {}".format(all_chars.length);
