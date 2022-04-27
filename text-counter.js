@@ -16,7 +16,7 @@ function count(text_input){
   let len_all_words = all_words.length;
   alert("{}, {}".format(len_all_sent, all_sent));
   for (var i = 0; i < len_all_sent; i++){
-    if (all_sent[i] == " ") {
+    if ((all_sent[i] == " ") ||  (all_sent[i] == null)){
       len_all_sent--;
     };
   };
