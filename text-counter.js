@@ -12,6 +12,12 @@ function count(text_input){
   alert('This is what you inputted: {}'.format(text_input));
   let all_chars = text_input.split(" ");
   let all_sent = text_input.split(".");
+  let len_all_sent = all_sent.length;
+  for (var i = 0; i < len_all_sent; i++){
+    if (all_sent[i] == " ") {
+      len_all_sent--;
+    };
+  };
   nom.innerHTML = "The Number Of Words In Your Text: {}".format(all_chars.length);
-  nos.innerHTML = "The Number Of Sentences In Your Text: {}".format(all_sent.length);
+  nos.innerHTML = "The Number Of Sentences In Your Text: {}".format(len_all_sent);
 };
