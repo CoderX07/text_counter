@@ -77,11 +77,6 @@ input:focus, textarea:focus, button:focus {
     height: 40px;
 }
 
-#settings {
-    width: 200px;
-    height: 75px;
-}
-
 h1, p {
     font-family: 'Abel', sans-serif;
     font-size: 25px;
@@ -99,7 +94,7 @@ h2 {
     font-weight: bold;
 }
   
-#open {
+#settings {
     background-color: #47a386;
     border: 0;
     border-radius: 5px;
@@ -109,6 +104,8 @@ h2 {
     color: white;
     align-items: center;
     justify-content: center;
+    width: 200px;
+    height: 75px;
 }
   
 .modal-container {
