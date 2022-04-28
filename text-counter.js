@@ -7,6 +7,9 @@ String.prototype.format = function () {
 
 var nom = document.getElementById("num-of-words");
 var nos = document.getElementById("num-of-sent");
+const open = document.getElementById('settings');
+const modal_container = document.getElementById('modal-container');
+const close = document.getElementById('close');
 
 function count(text_input){
   alert('This is what you inputted: {}'.format(text_input));
@@ -27,3 +30,11 @@ function count(text_input){
   nom.innerHTML = "The Number Of Words In Your Text: {}".format(len_all_words);
   nos.innerHTML = "The Number Of Sentences In Your Text: {}".format(len_all_sent);
 };
+
+open.addEventListener('click', () => {
+  modal_container.classList.add('show');
+});
+
+close.addEventListener('click', () => {
+  modal_container.classList.remove('show');
+});
