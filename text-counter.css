@@ -166,11 +166,13 @@ h2 {
 
 nav * {
     margin:0;
-    margin-left: 50px;
     padding:0;
 }
   
-  
+nav, menuitem, menu, a {
+    margin-left: 50px;
+}
+
 nav menuitem {
     position:relative;
     display:block;
