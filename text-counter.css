@@ -106,6 +106,9 @@ h2 {
     justify-content: center;
     width: 200px;
     height: 60px;
+}
+
+#settings:hover {
     box-shadow: 5px 10px 18px #888888;
 }
   
