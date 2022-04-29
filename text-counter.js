@@ -14,6 +14,7 @@ const light_dark_setting = document.getElementById('light-dark-set');
 var colors = ["#000000", "#ffffff"];
 var colorToggle = true;
 // var json = require('./data.json');
+// JSON Currently Unavaliable
 
 function count(text_input){
   alert('This is what you inputted: {}'.format(text_input));
