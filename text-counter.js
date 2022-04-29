@@ -10,6 +10,7 @@ var nos = document.getElementById("num-of-sent");
 const open = document.getElementById('settings');
 const modal_container = document.getElementById('modal-container');
 const close = document.getElementById('close');
+const light_dark_setting = document.getElementById('light-dark-set');
 
 function count(text_input){
   alert('This is what you inputted: {}'.format(text_input));
@@ -42,7 +43,9 @@ close.addEventListener('click', () => {
 function light_dark(choice){
   if (choice == "Light"){
     document.body.style.background = "white";
+    light_dark_setting.innerHTML = "Color Theme: Light";
   } else if (choice == "Dark"){
     document.body.style.background = "#292C35";
+    light_dark_setting.innerHTML = "Color Theme: Dark";
   };
 };
