@@ -48,15 +48,15 @@ function light_dark(choice){
   if (choice == "Light"){
     document.body.style.background = "white";
     light_dark_setting.innerHTML = "Color Theme: Light";
-    currentColor.style.color = colors[+colorToggle];
     if (temp_colors == "Color Theme: Dark"){
+      currentColor.style.color = colors[+colorToggle];
       colorToggle = !colorToggle;
     }
   } else if (choice == "Dark"){
     document.body.style.background = "#292C35";
     light_dark_setting.innerHTML = "Color Theme: Dark";
-    currentColor.style.color = colors[+colorToggle];
     if (temp_colors == "Color Theme: Light"){
+      currentColor.style.color = colors[+colorToggle];
       colorToggle = !colorToggle;
     }
   };
