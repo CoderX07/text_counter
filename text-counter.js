@@ -11,7 +11,8 @@ const open = document.getElementById('settings');
 const modal_container = document.getElementById('modal-container');
 const close = document.getElementById('close');
 const light_dark_setting = document.getElementById('light-dark-set');
-const h1 = document.getElementsByTagName('h1');
+var colors = ["#000000", "#ffffff"];
+var colorToggle = true;
 
 function count(text_input){
   alert('This is what you inputted: {}'.format(text_input));
@@ -42,17 +43,21 @@ close.addEventListener('click', () => {
 });
 
 function light_dark(choice){
+  var currentColor = document.getElementById('title');
+  var temp_colors = light_dark_setting.innerHTML;
   if (choice == "Light"){
     document.body.style.background = "white";
     light_dark_setting.innerHTML = "Color Theme: Light";
-    for(var i = 0; i < h1.length-1; i++) {
-      h1[i].style.color = "black";
+    currentColor.style.color = colors[+colorToggle];
+    if (temp_colors == "Color Theme: Dark"){
+      colorToggle = !colorToggle;
     }
   } else if (choice == "Dark"){
     document.body.style.background = "#292C35";
     light_dark_setting.innerHTML = "Color Theme: Dark";
-    for(var i = 0; i < h1.length-1; i++) {
-      h1[i].style.color = "#fff";
+    currentColor.style.color = colors[+colorToggle];
+    if (temp_colors == "Color Theme: Light"){
+      colorToggle = !colorToggle;
     }
   };
 };
