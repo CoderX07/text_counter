@@ -165,15 +165,10 @@ h2 {
 }
 
 nav * {
-    margin-top:0;
-    margin-bottom: 0;
-    margin-right: 0;
+    margin: 0 auto;
     padding:0;
 }
-  
-nav, menuitem, menu, a {
-    margin-left: 50;
-}
+
 
 nav menuitem {
     position:relative;
