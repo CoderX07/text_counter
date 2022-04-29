@@ -38,3 +38,11 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {
   modal_container.classList.remove('show');
 });
+
+function light_dark(choice){
+  if (choice == "Light"){
+    document.body.style.background = "white";
+  } else if (choice == "Dark"){
+    document.body.style.background = "#292C35";
+  };
+};
