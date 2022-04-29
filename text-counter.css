@@ -90,6 +90,10 @@ p {
     font-size: 20px;
 }
 
+div p {
+    font-size: 10px;
+}
+
 * {
     box-sizing: border-box;
 }
