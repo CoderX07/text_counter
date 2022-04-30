@@ -24,7 +24,7 @@ function count(text_input){
   let len_all_sent = all_sent.length;
   let len_all_words = all_words.length;
   for (var i = 0; i < len_all_sent; i++){
-    if ((all_sent[i] == " ") || (all_sent[i] == "") || (all_sent[i] == '"')){
+    if ((all_sent[i] == " ") || (all_sent[i] == "") || (all_sent[i] == '"') || (all_sent[i] == "â\x80\x9D")){
       len_all_sent--;
     };
   };
