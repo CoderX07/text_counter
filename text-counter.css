@@ -26,6 +26,12 @@
     --transition-speed: 600ms;
 }
 
+body::-webkit-scrollbar { width: 7px; }
+  
+body::-webkit-scrollbar-track { background: #1e1e24; }
+  
+body::-webkit-scrollbar-thumb { background: var(--accent-color-focus); }
+
 html, body {
     height: 100%;
     margin: 0;
