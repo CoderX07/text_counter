@@ -12,6 +12,9 @@ const modal_container = document.getElementById('modal-container');
 const close = document.getElementById('close');
 const light_dark_setting = document.getElementById('light-dark-set');
 const menuitem = document.getElementById('demo1');
+var currentColor = document.getElementById('title');
+var pTagWordsColor = document.getElementById('num-of-words');
+var pTagSentColor = document.getElementById('num-of-sent');
 var colors = ["#000000", "#ffffff"];
 var colorToggle = true;
 var light_dark_store = localStorage.getItem('Light_Dark');
@@ -71,9 +74,6 @@ close.addEventListener('click', () => {
 
 
 function light_dark(choice){
-  var currentColor = document.getElementById('title');
-  var pTagWordsColor = document.getElementById('num-of-words');
-  var pTagSentColor = document.getElementById('num-of-sent');
   var temp_colors = light_dark_setting.innerHTML;
   if ((choice == "Light")){
     document.body.style.background = "white";
