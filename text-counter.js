@@ -33,7 +33,7 @@ function count(text_input){
       len_all_words--;
     };
   };
-  console.log(all_sent);
+  console.log(all_words);
   nom.innerHTML = "The Number Of Words In Your Text: {}".format(len_all_words);
   nos.innerHTML = "The Number Of Sentences In Your Text: {}".format(len_all_sent);
 };
