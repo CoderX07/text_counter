@@ -166,6 +166,11 @@ h2 {
     font-size: 16px;
 }
 
+
+#temp-vis {
+    display: none;
+}
+
 nav * {
     margin: 0 auto;
     padding:0;
@@ -174,9 +179,8 @@ nav * {
 
 nav menuitem {
     position:relative;
-    display:block;
+    display: block;
     opacity:0;
-    visibility: hidden;
     cursor:pointer;
 }
   
@@ -189,7 +193,8 @@ nav > menu {
 }
   
 nav > menu > menuitem {
-    pointer-events: all; opacity:1;
+    pointer-events: all; 
+    opacity:1;
 }
 menu menuitem a {
     white-space:nowrap; display:block;

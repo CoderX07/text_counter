@@ -39,9 +39,11 @@ function count(text_input){
 
 open.addEventListener('click', () => {
   modal_container.classList.add('show');
-  if (menuitem.style.visibility === "hidden"){
-    menuitem.style.visibility = 'inherit';
-  }
+  document.getElementById('temp-vis').style.display = "block";
+  document.getElementById('temp-vis').style.opacity = 1;
+  // if (menuitem.style.visibility === "hidden"){
+  //   menuitem.style.visibility = 'inherit';
+  // }
 });
 
 close.addEventListener('click', () => {
