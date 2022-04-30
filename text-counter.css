@@ -124,7 +124,7 @@ h2 {
 
 #settings:hover {
     box-shadow: 5px 10px 18px #888888;
-    transition: 600ms ease;
+    transition: 600ms ease-in-out;
 }
   
 .modal-container {
@@ -139,7 +139,7 @@ h2 {
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 600ms ease;
+    transition: opacity 600ms ease-in-out;
 }
   
 .modal-container.show {
