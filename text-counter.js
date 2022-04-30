@@ -39,7 +39,9 @@ function count(text_input){
 
 open.addEventListener('click', () => {
   modal_container.classList.add('show');
-  menuitem.style.visibility = 'inherit';
+  if (menuitem.style.visibility === "hidden"){
+    menuitem.style.visibility = 'inherit';
+  }
 });
 
 close.addEventListener('click', () => {
