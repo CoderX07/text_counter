@@ -23,7 +23,13 @@ function count(text_input){
   let all_sent = text_input.split(".");
   let len_all_sent = all_sent.length;
   let len_all_words = all_words.length;
-  all_words = all_words.split("↵");
+  for (var i = 0; i < len_all_words; i++){
+    for (var j = 0; j < all_words[i].length; j++){
+      if (all_words[i][j] == "↵"){
+        all_words[i] = all_words[i].split("↵");
+      }
+    }
+  }
   for (var i = 0; i < len_all_sent; i++){
     if ((all_sent[i] == " ") || (all_sent[i] == "") || (all_sent[i] == '"') || (all_sent[i] == "”")){
       len_all_sent--;
