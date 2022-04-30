@@ -36,6 +36,15 @@ body {
     transition: background 0.2s linear;
 }
 
+#views, #likes{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.material-icons.md-24 { font-size: 24px; display: block; color: #000000; }
+
 input[type="text"], textarea, button {
 	background: var(--secondary-color);
 	margin-top: 20px;
