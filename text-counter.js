@@ -46,12 +46,16 @@ close.addEventListener('click', () => {
 
 function light_dark(choice){
   var currentColor = document.getElementById('title');
+  var pTagWordsColor = document.getElementById('num-of-words');
+  var pTagSentColor = document.getElementById('num-of-sent');
   var temp_colors = light_dark_setting.innerHTML;
   if (choice == "Light"){
     document.body.style.background = "white";
     light_dark_setting.innerHTML = "Color Theme: Light";
     if (temp_colors == "Color Theme: Dark"){
       currentColor.style.color = colors[+colorToggle];
+      pTagWordsColor.style.color = colors[+colorToggle];
+      pTagSentColor.style.color = colors[+colorToggle];
       colorToggle = !colorToggle;
     }
   } else if (choice == "Dark"){
@@ -59,6 +63,8 @@ function light_dark(choice){
     light_dark_setting.innerHTML = "Color Theme: Dark";
     if (temp_colors == "Color Theme: Light"){
       currentColor.style.color = colors[+colorToggle];
+      pTagWordsColor.style.color = colors[+colorToggle];
+      pTagSentColor.style.color = colors[+colorToggle];
       colorToggle = !colorToggle;
     }
   };
