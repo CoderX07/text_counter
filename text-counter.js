@@ -32,7 +32,6 @@ function count(text_input){
   }
   all_words = [].concat.apply([], all_words);
   len_all_words = all_words.length;
-  console.log(all_words);
   for (var i = 0; i < len_all_sent; i++){
     if ((all_sent[i] == " ") || (all_sent[i] == "") || (all_sent[i] == '"') || (all_sent[i] == "”")){
       len_all_sent--;
@@ -43,7 +42,6 @@ function count(text_input){
       len_all_words--;
     };
   };
-  console.log(all_words);
   nom.innerHTML = "The Number Of Words In Your Text: {}".format(len_all_words);
   nos.innerHTML = "The Number Of Sentences In Your Text: {}".format(len_all_sent);
 };
