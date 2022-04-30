@@ -14,8 +14,20 @@ const light_dark_setting = document.getElementById('light-dark-set');
 const menuitem = document.getElementById('demo1');
 var colors = ["#000000", "#ffffff"];
 var colorToggle = true;
+var light_dark_store = localStorage.getItem('Light_Dark');
 // var json = require('./data.json');
 // JSON Currently Unavaliable
+
+if (light_dark_store == null){ light_dark_store = "true"; }
+light_dark_store = JSON.parse(light_dark_store);
+if (!light_dark_store){
+  document.body.style.background = "#292C35";
+  light_dark_setting.innerHTML = "Color Theme: Dark";
+  currentColor.style.color = colors[+colorToggle];
+  pTagWordsColor.style.color = colors[+colorToggle];
+  pTagSentColor.style.color = colors[+colorToggle];
+  colorToggle = !colorToggle;
+}
 
 function count(text_input){
   alert('This is what you inputted: {}'.format(text_input));
@@ -71,6 +83,7 @@ function light_dark(choice){
       pTagWordsColor.style.color = colors[+colorToggle];
       pTagSentColor.style.color = colors[+colorToggle];
       colorToggle = !colorToggle;
+      light_dark_store = !light_dark_store;
     }
   } else if ((choice == "Dark")){
     document.body.style.background = "#292C35";
@@ -80,6 +93,9 @@ function light_dark(choice){
       pTagWordsColor.style.color = colors[+colorToggle];
       pTagSentColor.style.color = colors[+colorToggle];
       colorToggle = !colorToggle;
+      light_dark_store = !light_dark_store;
     }
   };
 };
+
+window.addEventListener("beforeunload", function () { localStorage.setItem("Light_Dark", '{}'.format(light_dark_store.toString())); });
