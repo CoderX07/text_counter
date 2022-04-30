@@ -11,6 +11,7 @@ const open = document.getElementById('settings');
 const modal_container = document.getElementById('modal-container');
 const close = document.getElementById('close');
 const light_dark_setting = document.getElementById('light-dark-set');
+const menuitem = document.getElementById('demo1');
 var colors = ["#000000", "#ffffff"];
 var colorToggle = true;
 // var json = require('./data.json');
@@ -38,11 +39,14 @@ function count(text_input){
 
 open.addEventListener('click', () => {
   modal_container.classList.add('show');
+  menuitem.style.visibility = "visible";
 });
 
 close.addEventListener('click', () => {
   modal_container.classList.remove('show');
 });
+
+
 
 function light_dark(choice){
   var currentColor = document.getElementById('title');

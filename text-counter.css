@@ -201,7 +201,6 @@ menuitem:hover > menu {
   
 menuitem:hover > menu > menuitem, menu:hover > menuitem {
     opacity:1;
-    visibility: visible;
 }
   
 nav > menu > menuitem menuitem menu {
