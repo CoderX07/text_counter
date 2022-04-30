@@ -26,9 +26,9 @@ function count(text_input){
   for (var i = 0; i < len_all_words; i++){
     for (var j = 0; j < all_words[i].length; j++){
       console.log(all_words[i]);
-      if (all_words[i][j] == "↵"){
+      if (all_words[i][j] == "\n"){
         console.log(all_words[i]);
-        all_words[i] = all_words[i].split("↵");
+        all_words[i] = all_words[i].split("\n");
         console.log(all_words[i]);
       }
     }
