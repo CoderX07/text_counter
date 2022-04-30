@@ -139,7 +139,7 @@ h2 {
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 600ms linear;
+    transition: opacity 400ms linear;
 }
   
 .modal-container.show {
@@ -176,6 +176,7 @@ nav menuitem {
     position:relative;
     display:block;
     opacity:0;
+    visibility: hidden;
     cursor:pointer;
 }
   
@@ -200,6 +201,7 @@ menuitem:hover > menu {
   
 menuitem:hover > menu > menuitem, menu:hover > menuitem {
     opacity:1;
+    visibility: visible;
 }
   
 nav > menu > menuitem menuitem menu {
