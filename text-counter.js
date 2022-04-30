@@ -15,11 +15,15 @@ const menuitem = document.getElementById('demo1');
 var currentColor = document.getElementById('title');
 var pTagWordsColor = document.getElementById('num-of-words');
 var pTagSentColor = document.getElementById('num-of-sent');
+var pTagViewsColor = document.getElementById('views');
+var pTagLikesColor = document.getElementById('likes');
+var heartColor = document.getElementsByClassName('material-icons md-24');
 var colors = ["#000000", "#ffffff"];
 var colorToggle = true;
 var light_dark_store = localStorage.getItem('Light_Dark');
 // var json = require('./data.json');
 // JSON Currently Unavaliable
+heartColor = heartColor[0];
 
 if (light_dark_store == null){ light_dark_store = "true"; }
 light_dark_store = JSON.parse(light_dark_store);
@@ -29,6 +33,10 @@ if (!light_dark_store){
   currentColor.style.color = colors[+colorToggle];
   pTagWordsColor.style.color = colors[+colorToggle];
   pTagSentColor.style.color = colors[+colorToggle];
+  pTagViewsColor.style.color = colors[+colorToggle];
+  pTagLikesColor.style.color = colors[+colorToggle];
+  heartColor.style.color = colors[+colorToggle];
+  document.body.classList.toggle('dark');
   colorToggle = !colorToggle;
 }
 
@@ -82,6 +90,10 @@ function light_dark(choice){
       currentColor.style.color = colors[+colorToggle];
       pTagWordsColor.style.color = colors[+colorToggle];
       pTagSentColor.style.color = colors[+colorToggle];
+      pTagViewsColor.style.color = colors[+colorToggle];
+      pTagLikesColor.style.color = colors[+colorToggle];
+      heartColor.style.color = colors[+colorToggle];
+      document.body.classList.toggle('dark');
       colorToggle = !colorToggle;
       light_dark_store = !light_dark_store;
     }
@@ -92,6 +104,10 @@ function light_dark(choice){
       currentColor.style.color = colors[+colorToggle];
       pTagWordsColor.style.color = colors[+colorToggle];
       pTagSentColor.style.color = colors[+colorToggle];
+      pTagViewsColor.style.color = colors[+colorToggle];
+      pTagLikesColor.style.color = colors[+colorToggle];
+      heartColor.style.color = colors[+colorToggle];
+      document.body.classList.toggle('dark');
       colorToggle = !colorToggle;
       light_dark_store = !light_dark_store;
     }

@@ -29,6 +29,7 @@
 body::-webkit-scrollbar { width: 7px; }
   
 body::-webkit-scrollbar-track { background: #1e1e24; }
+body.dark::-webkit-scrollbar-track { background: white; transition: 400ms linear;}
   
 body::-webkit-scrollbar-thumb { background: var(--accent-color-focus); }
 
