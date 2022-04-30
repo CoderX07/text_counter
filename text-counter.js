@@ -28,7 +28,7 @@ function count(text_input){
     };
   };
   for (var i = 0; i < len_all_words; i++){
-    if ((all_words[i] == ".") || (all_words[i] == '"')) {
+    if ((all_words[i] == ".") || (all_words[i] == '"') || (all_words[i] == "-")) {
       len_all_words--;
     };
   };
