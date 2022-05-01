@@ -21,9 +21,11 @@ var heartColor = document.getElementsByClassName('material-icons md-24');
 var colors = ["#000000", "#ffffff"];
 var colorToggle = true;
 var light_dark_store = localStorage.getItem('Light_Dark');
-// var json = require('./data.json');
+const json = require('./data.json');
 // JSON Currently Unavaliable
 heartColor = heartColor[0];
+pTagViewsColor.innerHTML = "Views | {}".format(json.views.toString());
+console.log(json.views.toString());
 
 if (light_dark_store == null){ light_dark_store = "true"; }
 light_dark_store = JSON.parse(light_dark_store);
